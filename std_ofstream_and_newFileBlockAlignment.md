@@ -29,6 +29,7 @@ The alignment of the first write operation with the beginning of a sector or pag
 File Creation:
 
 When a new file is created, the file system allocates space for it on the disk. This allocation is typically done in terms of "blocks" or "clusters," depending on the file system terminology. These blocks are composed of one or more "sectors," which are the smallest physical storage units on a disk.
+
 Block Alignment:
 
 Most modern file systems align the start of a new file with the beginning of a block. This is not just a coincidence but a designed feature:
