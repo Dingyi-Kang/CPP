@@ -35,5 +35,3 @@ Block Alignment:
 Most modern file systems align the start of a new file with the beginning of a block. This is not just a coincidence but a designed feature:
 Performance: Disk read and write operations are fastest when the data is aligned with the physical sectors. Misaligned accesses, where a read or write operation spans multiple sectors, can significantly degrade performance because they may require additional disk rotations to access the misaligned data.
 Efficiency: Aligning writes with the physical sectors minimizes the need for read-modify-write cycles, where the disk needs to read and modify partial sectors before writing them back. This is particularly important for write operations.
-
-The alignment of the first write operation with the beginning of a sector or page on the disk is primarily dictated by the underlying file system and operating system's disk management strategies. Here's a more detailed explanation of why this alignment typically occurs:
