@@ -1,0 +1,1 @@
+ std::ifstream::read function expects a pointer to a char (or unsigned char or std::byte) for its first argument. This is because read is designed to read raw bytes from a file into memory. The cast to (char *) ensures that the pointer to the data is in the correct format for the read function to process.
